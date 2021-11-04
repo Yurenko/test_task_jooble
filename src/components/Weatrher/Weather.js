@@ -4,7 +4,7 @@ import style from './Weather.module.css';
 const Weather = ({ name, temperature, error }) => {
   return (
     <div className={style.informWeather}>
-      {error && <p>{error}</p>}
+      {error && <div>{error}</div>}
       {name && (
         <div>
           {name} (Today)

@@ -7,7 +7,7 @@ const initialState = {
   },
   isLoading: false,
   error: '',
-  workingDays: [],
+  weatherOnWeekdays: [],
 };
 
 const weatherReduser = (state = initialState, { type, payload }) => {
@@ -21,7 +21,7 @@ const weatherReduser = (state = initialState, { type, payload }) => {
     case ActionsType.WEATHER_LOADING:
       return { ...state, isLoading: payload };
     case ActionsType.WEATHER_FEATCH_FOR_FIVE_DAYS:
-      return { ...state, error: '', workingDays: payload };
+      return { ...state, error: '', weatherOnWeekdays: payload };
     default:
       return state;
   }

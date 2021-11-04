@@ -1,5 +1,16 @@
+body {
+    margin: 30px;
+    background-color: #cacaca;
+}
+
+.app {
+    padding: 35px;
+    background-color: #fff;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }

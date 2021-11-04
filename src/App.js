@@ -3,7 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Form from './components/Form/Form';
 import Weather from './components/Weatrher/Weather';
-import featchWeathers from './redux/weatherOptions';
+import {
+  featchWeathers,
+  featchWeathersForFiveDays,
+} from './redux/weatherOptions';
 import Loader from './components/Loader/Loader';
 import style from './App.module.css';
 import HistorySearch from './components/HistorySearch/HistorySearch';
@@ -24,10 +27,6 @@ function App() {
       const initialValue = JSON.parse(item);
       setLastHistorySearch(initialValue);
     }
-    // return () => {
-    //   localStorage.setItem('contactUsers', JSON.stringify(lastHistorySearch));
-    //   console.log('ok');
-    // };
   }, []);
 
   useEffect(() => {
@@ -63,13 +62,14 @@ function App() {
   const handleClick = id => {
     const cityFind = lastHistorySearch.find(item => item.id === id);
     dispatch(featchWeathers(cityFind.citySearch));
+    dispatch(featchWeathersForFiveDays(cityFind.citySearch));
   };
 
   return (
-    <div>
+    <div className={style.app}>
       <div className={style.header}>
         <div>
-          <h3>Weather Forecast</h3>
+          <h1>Weather Forecast</h1>
           <Form
             citySearch={citySearch}
             getWeather={fetchData}
@@ -90,7 +90,7 @@ function App() {
         lastHistorySearch={lastHistorySearch}
         handleClick={handleClick}
       />
-      <WeatherForFiveDay />
+      {!error && <WeatherForFiveDay />}
     </div>
   );
 }

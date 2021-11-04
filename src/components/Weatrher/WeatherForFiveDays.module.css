@@ -1,0 +1,28 @@
+.weatherOnWeekdays {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.weatherCardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 200px;
+    background-color: #cfd9dd;
+    border: 2px solid #249ffd;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.day {
+    margin-top: 0;
+}
+
+.temperature {
+    font-size: 20px;
+    font-weight: 500;
+}
