@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/test_task_jooble/static/css/main.5a97ea85.chunk.css",
+    "main.js": "/test_task_jooble/static/js/main.fb92d523.chunk.js",
+    "main.js.map": "/test_task_jooble/static/js/main.fb92d523.chunk.js.map",
+    "runtime-main.js": "/test_task_jooble/static/js/runtime-main.b150baef.js",
+    "runtime-main.js.map": "/test_task_jooble/static/js/runtime-main.b150baef.js.map",
+    "static/js/2.82fd818d.chunk.js": "/test_task_jooble/static/js/2.82fd818d.chunk.js",
+    "static/js/2.82fd818d.chunk.js.map": "/test_task_jooble/static/js/2.82fd818d.chunk.js.map",
+    "index.html": "/test_task_jooble/index.html",
+    "static/css/main.5a97ea85.chunk.css.map": "/test_task_jooble/static/css/main.5a97ea85.chunk.css.map",
+    "static/js/2.82fd818d.chunk.js.LICENSE.txt": "/test_task_jooble/static/js/2.82fd818d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b150baef.js",
+    "static/js/2.82fd818d.chunk.js",
+    "static/css/main.5a97ea85.chunk.css",
+    "static/js/main.fb92d523.chunk.js"
+  ]
+}
