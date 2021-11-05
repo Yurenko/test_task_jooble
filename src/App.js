@@ -47,6 +47,7 @@ function App() {
           lastHistorySearch.shift();
         }
         setLastHistorySearch(oldArray => [...oldArray, newElement]);
+        dispatch(featchWeathersForFiveDays(citySearch));
         setCitySearch('');
       })
       .catch(errorMassage => {
