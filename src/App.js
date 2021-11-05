@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     dispatch(featchWeathers('Kyiv'));
-    const item = localStorage.getItem('contactUsers');
+    const item = localStorage.getItem('HistorySearchWeather');
     if (item) {
       const initialValue = JSON.parse(item);
       setLastHistorySearch(initialValue);
@@ -30,7 +30,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('contactUsers', JSON.stringify(lastHistorySearch));
+    localStorage.setItem(
+      'HistorySearchWeather',
+      JSON.stringify(lastHistorySearch),
+    );
   }, [lastHistorySearch]);
 
   const fetchData = e => {
