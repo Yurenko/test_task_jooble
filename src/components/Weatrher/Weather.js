@@ -7,8 +7,8 @@ const Weather = ({ name, temperature, error }) => {
       {error && <div>{error}</div>}
       {name && (
         <div>
-          {name} (Today)
-          <> {Math.round((temperature.temp - 273.15) * 100) / 100} &#176;С</>
+          {name} (Today) {Math.round((temperature.temp - 273.15) * 100) / 100}{' '}
+          &#176;С
         </div>
       )}
     </div>

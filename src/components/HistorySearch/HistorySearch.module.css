@@ -1,21 +1,24 @@
 .blockHistory {
     display: block;
     padding: 10px;
-    margin-top: 10px;
     height: auto;
     background-color: #cfd9dd;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .button {
     background-color: transparent;
     border: none;
-    margin-right: 10px;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 10px;
     color: #249ffd
+}
+
+.button:not(:last-child) {
+    margin-right: 10px;
 }
 
 .button:hover {
